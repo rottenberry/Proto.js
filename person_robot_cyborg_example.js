@@ -28,6 +28,7 @@ Cyborg.factory.init = function initCyborg(instance, args) {
   //Mixins
   Person.factory.init(instance, args);
   Robot.factory.init(instance, args);
+  
   instance.implants = [];
 }
 
@@ -35,6 +36,7 @@ const LaserCyborg = Prototype.extend(Cyborg);
 LaserCyborg.factory.init = function initLaserCyborg(instance, args) {
   //It can be considered as a mixin too
   Cyborg.factory.init(instance, args);
+  
   instance.isLaser = true;
   instance.implants.push('laser hand');
 }
@@ -52,27 +54,26 @@ const malePerson = Person.factory.createMale({
   name: "Bob",
 });
 
-const laserCyborg = LaserCyborg.factory.create({
+const myLaserCyborg = LaserCyborg.factory.create({
   name: 'LaserSam',
   gender: 'male',
   model: 'LS1',
   color: 'green',
-  year: 1996,
+  year: 2016,
 });
-laserCyborg.implants.push('aiming cheap');
-laserCyborg.implants.push('long life battery');
+
+myLaserCyborg.implants.push('aiming cheap');
+myLaserCyborg.implants.push('long life battery');
 
 /*
   Dynamic inheritance works as usual
 */
 
 Cyborg.getImplants = function getCyborgImplants() {
-  return Object.create(this.implants);
-  //Or array.slice(), doesn't matter, but this way saves some memory;
-  
+  return this.implants.slice();
 }
 
-laserCyborg.getImplants().forEach((implant) => console.log(implant));
+myLaserCyborg.getImplants().forEach((implant) => console.log(implant));
 /*
 =>  laser hand
 =>  aiming cheap
@@ -80,5 +81,7 @@ laserCyborg.getImplants().forEach((implant) => console.log(implant));
 */
 
 LaserCyborg.laserColor = 'red';
+console.log(myLaserCyborg.laserColor) //=> red
 
-console.log(laserCyborg.laserColor) //=> red
+myLaserCyborg.laserColor = 'blue';
+console.log(myLaserCyborg.laserColor) //=> blue

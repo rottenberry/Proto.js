@@ -11,7 +11,7 @@ There aren't `hasOwnProperty`, `instanceOf` and other such properties, which wou
 
 Remember: `instanceOf` **won't work**!
 
-The only one special property of every isntance is `factoty` wich is always `null`. 
+The only one special property of every isntance is `factory` wich is always `null`. Also this property is special for prototypes too: it contains methods `init()`, `create()` and `Prototype` (it's just a link to the prototype).
 
 The prototype aren't compatible with functions that are constructors. But you still borrow methods directly if your codebase allows that. 
 

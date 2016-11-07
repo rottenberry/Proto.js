@@ -19,6 +19,6 @@ The prototype must fit in these conditions:
 
 * Properties which should be inherited by instances, **must** be defined directly in the prototype; properties which must not be inherited, **must** be defined in `factory` property of the prototype.
 * `SomePrototype.factory.create()` (in the case you overrided it) **should** accept only one parameter - an object, which contains all needed properties.
-* `SomePrototype.factory.init()` **must** be implented in every prototype. And this method **must** accept two parameters: a new instance and the object which contains all properties.
+* `SomePrototype.factory.init()` **must** be implented in every prototype. And this method **should** accept two parameters: a new instance and the object which contains all properties.
 
 Check out [`person_robot_cyborg_example.js`](https://github.com/rottenberry/Proto.js/blob/master/person_robot_cyborg_example.js) file to see how it works.

@@ -28,7 +28,7 @@ Cyborg.factory.init = function initCyborg(instance, args) {
 
 const LaserCyborg = Prototype.extend(Cyborg);
 LaserCyborg.factory.init = function initLaserCyborg(instance, args) {
-  //Can be considered as a mixin too
+  //It can be considered as a mixin too
   Cyborg.factory.init(instance, args);
   instance.isLaser = true;
 }

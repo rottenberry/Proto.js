@@ -21,4 +21,6 @@ The prototype must fit in these conditions:
 * `SomePrototype.factory.create()` (in the case you overrided it) **should** accept only one parameter - an object, which contains all needed properties.
 * `SomePrototype.factory.init()` **must** be implented in every prototype. And this method **should** accept two parameters: a new instance and the object which contains all properties.
 
+You can combine many calls of `init()` method of different prototypes to make mixins.
+
 Check out [`person_robot_cyborg_example.js`](https://github.com/rottenberry/Proto.js/blob/master/person_robot_cyborg_example.js) file to see how it works.

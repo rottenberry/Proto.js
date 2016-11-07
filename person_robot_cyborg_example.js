@@ -4,6 +4,13 @@ Person.factory.init = function initPerson(instance, args) {
   instance.name = name;
   instance.gender = gender;
 }
+Person.factory.createMale = function createMalePerson(ars) {
+  const maleArgs = Object.create(args);
+  maleArgs.gender = 'male';
+
+  return this.create(maleArgs);
+}
+
 
 const Robot = Prototype.create();
 Robot.factory.init = function initRobot(instance, args) {

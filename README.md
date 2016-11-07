@@ -3,10 +3,10 @@
 
 ####API
 
-* Prototype.create()
+* Prototype.create() 
   
   Returns a new prototype which inherits nothing. It **doesn't** mean that the new prototype can't use mixins.
-* Prototype.extend(prototype)
+* Prototype.extend(prototype) 
   
   Return a new prototype which inherits dynamicly from an already existing prototype. It **doesn't** mean that the new prototype must use mixins.
 

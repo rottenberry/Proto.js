@@ -17,7 +17,7 @@ The prototype aren't compatible with functions that are constructors or with cla
 
 The prototype must fit in these conditions: 
 
-* Properties which should be inherited by instances, **must** be defined directly in the prototype; properties which must not be inherited, are defined in `factory` property of the prototype.
+* Properties which should be inherited by instances, **must** be defined directly in the prototype; properties which must not be inherited, **must** be defined in `factory` property of the prototype.
 * `SomePrototype.factory.create()` (in the case you ovverrided it) **should** accept only one parameter - an object, which contains all needed properties.
 * `SomePrototype.factory.init()` **must** be implented in every prototype. And this method **must** accept two parameters: a new instance and the object which contains all properties.
 

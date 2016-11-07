@@ -66,7 +66,7 @@ myLaserCyborg.implants.push('aiming cheap');
 myLaserCyborg.implants.push('long life battery');
 
 /*
-  Dynamic inheritance works just as usual.
+  Dynamic inheritance works just as usual, there is nothing new.
 */
 
 Cyborg.getImplants = function getCyborgImplants() {

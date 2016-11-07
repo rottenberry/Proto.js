@@ -25,7 +25,7 @@ The only one special property of every isntance is `factory` wich is always `nul
 
 The prototype aren't compatible with functions that are constructors or with classes from ES6. But you still can borrow methods directly if your codebase allows that. 
 
-The prototype must fit in these conditions: 
+The prototype must meet these requirements: 
 
 * Properties which should be inherited by instances, **must** be defined directly in the prototype; properties which should not be inherited, **must** be defined in `factory` property of the prototype.
 * `SomePrototype.factory.create()` (in the case you overrided it) **should** accept only one parameter - an object, which contains all needed properties.

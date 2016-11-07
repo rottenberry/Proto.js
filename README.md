@@ -13,7 +13,7 @@ Remember: `instanceOf` **won't work**!
 
 The only one special property of every isntance is `factory` wich is always `null`. Also this property is special for prototypes too: it contains methods `init()`, `create()` and `Prototype` (it's just a link to the prototype itself).
 
-The prototype aren't compatible with functions that are constructors. But you still can borrow methods directly if your codebase allows that. 
+The prototype aren't compatible with functions that are constructors or with classes from ES6. But you still can borrow methods directly if your codebase allows that. 
 
 The prototype must fit in these conditions: 
 

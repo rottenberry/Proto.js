@@ -1,6 +1,13 @@
 # Proto.js
 #### A small library which provides simple prototype inheritance. 
 
+####API
+
+* Prototype.create()
+  Returns a new prototype which inherits nothing. It **doesn't** mean that the new prototype can't use mixins.
+* Prototype.extend(prototype)
+  Return a new prototype which inherits dynamicly from an already existing prototype. It **doesn't** mean that the new prototype must use mixins.
+
 There are two kinds of things: prototypes (factories) and instances (just simple objects). 
 
 Objects are being created without `new` keyword. 

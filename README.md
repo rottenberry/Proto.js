@@ -1,5 +1,5 @@
 # Proto.js
-#### A small library which provides simple prototype inheritance. 
+### A small library which provides simple prototype inheritance. 
 
 There are two kinds of things: prototypes (factories) and instances (just simple objects). 
 

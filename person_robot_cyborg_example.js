@@ -66,12 +66,18 @@ myLaserCyborg.implants.push('aiming cheap');
 myLaserCyborg.implants.push('long life battery');
 
 /*
-  Dynamic inheritance works as usual
+  Dynamic inheritance works just as usual.
 */
 
 Cyborg.getImplants = function getCyborgImplants() {
   return this.implants.slice();
 }
+/*
+  "Cyborg" is a prototype for "LaserCyberg",
+  and "LaserCyborg" is a prototype for "myLaserCyborg",
+  so "myLaserCyborg" inherits all properties from "Cyborg" dynamicly,
+  as well as form "LaserCyborg"
+*/
 
 myLaserCyborg.getImplants().forEach((implant) => console.log(implant));
 /*

@@ -13,7 +13,8 @@ Robot.factory.init = function initRobot(instance, args) {
 }
 
 const Cyborg = Prototype.create();
-Cyborg.factory.init = function initCyborg(instance, args) {  
+Cyborg.factory.init = function initCyborg(instance, args) {
+  //Mixins
   Person.factory.init(instance, args);
   Robot.factory.init(instance, args);
 }

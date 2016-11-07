@@ -76,7 +76,7 @@ Cyborg.getImplants = function getCyborgImplants() {
   "Cyborg" is a prototype for "LaserCyberg",
   and "LaserCyborg" is a prototype for "myLaserCyborg",
   so "myLaserCyborg" inherits all properties from "Cyborg" dynamicly,
-  as well as form "LaserCyborg"
+  as well as from "LaserCyborg"
 */
 
 myLaserCyborg.getImplants().forEach((implant) => console.log(implant));

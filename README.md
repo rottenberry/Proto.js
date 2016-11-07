@@ -15,5 +15,5 @@ The prototype aren't compatible with functions that are constructors. But you st
 
 The prototype must keep these conventions: 
 
-**properties which should be inherited by instances, are defined directly in the prototype; properties which must not be inherited, are defined in `factory` property of the prototype.
-**`SomePrototype.factory.create()` and `SomePrototype.factory.init()` must accept only one parameter - an object which contains all needed fields.
+*properties which should be inherited by instances, are defined directly in the prototype; properties which must not be inherited, are defined in `factory` property of the prototype.
+*`SomePrototype.factory.create()` and `SomePrototype.factory.init()` must accept only one parameter - an object which contains all needed fields.

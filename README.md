@@ -20,4 +20,4 @@ The prototype must fit in these conditions:
 * Properties which should be inherited by instances, are defined directly in the prototype; properties which must not be inherited, are defined in `factory` property of the prototype.
 * `SomePrototype.factory.create()` and `SomePrototype.factory.init()` must accept only one parameter - an object which contains all needed fields.
 
-Check out `person_robot_cyborg_example.js` file to see how it works.
+Check out [`person_robot_cyborg_example.js`](https://github.com/rottenberry/Proto.js/blob/master/person_robot_cyborg_example.js) file to see how it works.

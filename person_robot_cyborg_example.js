@@ -34,8 +34,8 @@ Cyborg.factory.init = function initCyborg(instance, args) {
 
 const LaserCyborg = Prototype.extend(Cyborg);
 LaserCyborg.factory.init = function initLaserCyborg(instance, args) {
-  //It can be considered as a mixin too
   Cyborg.factory.init(instance, args);
+  //It's not necessary, but useful if we want laser cyborgs be like cyborgs
   
   instance.isLaser = true;
   instance.implants.push('laser hand');

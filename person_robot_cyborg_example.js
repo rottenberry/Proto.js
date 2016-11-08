@@ -88,7 +88,9 @@ myLaserCyborg.getImplants().forEach((implant) => console.log(implant));
 */
 
 LaserCyborg.laserColor = 'red';
+//'red' is supposed to be a default value for all laser cyborg.
 console.log(myLaserCyborg.laserColor) //=> red
 
 myLaserCyborg.laserColor = 'blue';
+//Our laser cyborg is special
 console.log(myLaserCyborg.laserColor) //=> blue

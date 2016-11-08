@@ -71,6 +71,7 @@ myLaserCyborg.implants.push('long life battery');
 
 Cyborg.getImplants = function getCyborgImplants() {
   return this.implants.slice();
+  //To prevent modifying the original array
 }
 /*
   "Cyborg" is a prototype for "LaserCyberg",

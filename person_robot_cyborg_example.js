@@ -7,7 +7,7 @@ Person.factory.init = function initPerson(instance, args) {
   const {name, gender} = args;
   instance.name = name;
   instance.gender = gender;
-};
+}; 
 Person.factory.createMale = function createMalePerson(args) {
   const maleArgs = Object.create(args);
   maleArgs.gender = 'male';

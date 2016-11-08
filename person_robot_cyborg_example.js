@@ -1,5 +1,5 @@
 /*
-  It's how to define new prototypes
+  It's how to create new prototypes
 */
 
 const Person = Prototype.create();

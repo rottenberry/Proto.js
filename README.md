@@ -13,7 +13,7 @@
 # 
 There are two kinds of things: prototypes (factories) and instances (just simple objects). 
 
-Objects are being created without `new` keyword. 
+Instances are being created without `new` keyword. 
 
 Every prototype must implement at least one method - `init()`. This method is a place where a new instance gets its properties from the prototype or another prototypes. 
 
